@@ -4,15 +4,12 @@
 # Integrantes: Federico Duarte y Natalia Córdoba
 # ---------------------------------------------------------------------------------------------------
 
-# IMPORTACIONES
-import random
-
 # PREGUNTAS DEL JUEGO
 PREGUNTAS = [
     # Nivel 1: Búsqueda Lineal
     {
         "nivel": 1,
-        "texto": "Tienes la lista [5, 3, 8, 2, 9, 1]. Deseas buscar un número recorriéndola elemento por elemento. ¿Qué algoritmo utilizas?",
+        "texto": "Tienes la siguiente lista: [5, 3, 8, 2, 9, 1]. \nDebes buscar el número 8 recorriéndola elemento por elemento. ¿Qué algoritmo utilizarías?",
         "opciones": ["Búsqueda lineal", "Búsqueda binaria"],
         "respuesta_correcta": "1"
     },
@@ -20,14 +17,14 @@ PREGUNTAS = [
     # Nivel 3: Bubble Sort (Ordenamiento por burbuja)
      {
         "nivel": 3,
-        "texto": "¿Cuál de los siguientes algoritmos compara cada elemento de la lista con el siguiente y luego intercambiandolos si no estaán en el orden correcto?",
+        "texto": "Tienes la seguiente lista: [19, 32, 71, 13, 4, 58]. \n¿Cuál de los siguientes algoritmos usarías para compar cada elemento de la lista con el siguiente y luego intercambiarlos si no están en el orden correcto?",
         "opciones": ["Selection Sort", "Bubble Sort" "Insertion Sort", "Quick Sort"],
         "respuesta_correcta": "2"
     },
     # Nivel 4: Selection Sort (Ordenamiento por selección)
     {
         "nivel": 4,
-        "texto": "¿Qué algoritmo encuentra el mínimo de una sublista y lo coloca en la primera posición disponible?",
+        "texto": "Tienes la seguiente lista: [66, 23, 17, 4, 33]. \n¿Qué algoritmo utilizarías para encontrar el elemento menor de la lista y luego colocarlo en el primer elemento, repitiendo este proceso con todos los elementos?",
         "opciones": ["Insertion Sort", "Quick Sort", "Selection Sort", "Bubble Sort"],
         "respuesta_correcta": "3"
     },
@@ -63,20 +60,23 @@ def selection_sort(lista):
 # funcion insertion_sort /// Fede
 # funcion quick_sort /// Fede
 
-def ejecutar_funcion(nivel):
+# FUNCION RESOLVER ALGORÍTMO (cuando la respuesta es correcta)
+def resolver_algoritmo(nivel):
+    # Búsqueda lineal
     if nivel == 1:
         lista = [5, 3, 8, 2, 9, 1]
         print("Buscando el número 8 en", lista)
         print("Resultado:", busqueda_lineal(lista, 8))
+    # Bubble Sort
     elif nivel == 3:
-        lista = [9, 2, 7, 4]
+        lista = [19, 32, 71, 13, 4, 58]
         print("Ordenando con Burbuja:", lista)
         print("Resultado:", bubble_sort(lista))
+    # Selection_ sort
     elif nivel == 4:
-        lista = [9, 2, 7, 4]
+        lista = [66, 23, 17, 4, 33]
         print("Ordenando con Selección:", lista)
         print("Resultado:", selection_sort(lista))
-
 
 # función para preguntar /// Fede
 
@@ -94,6 +94,7 @@ def jugar():
         print("¡Muy bien! Has respondido bien más de la mitad de las preguntas.")
     else:
         print("Debes practicar un poco más.")
+## ///// podemos preguntar si quiere salir o volver a jugar
 
 # ENTRADA AL JUEGO
 if __name__ == "__main__":  # Ejecuta el juego solo si el archivo se ejecuta directamente
