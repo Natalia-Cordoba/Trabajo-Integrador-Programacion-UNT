@@ -63,6 +63,21 @@ def selection_sort(lista):
 # funcion insertion_sort /// Fede
 # funcion quick_sort /// Fede
 
+def ejecutar_funcion(nivel):
+    if nivel == 1:
+        lista = [5, 3, 8, 2, 9, 1]
+        print("Buscando el número 8 en", lista)
+        print("Resultado:", busqueda_lineal(lista, 8))
+    elif nivel == 3:
+        lista = [9, 2, 7, 4]
+        print("Ordenando con Burbuja:", lista)
+        print("Resultado:", bubble_sort(lista))
+    elif nivel == 4:
+        lista = [9, 2, 7, 4]
+        print("Ordenando con Selección:", lista)
+        print("Resultado:", selection_sort(lista))
+
+
 # función para preguntar /// Fede
 
 # MENÚ PRINCIPAL DEL JUEGO
