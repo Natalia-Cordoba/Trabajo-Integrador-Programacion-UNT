@@ -17,7 +17,7 @@ PREGUNTAS = [
         "opciones": ["Búsqueda lineal", "Búsqueda binaria"],
         "respuesta_correcta": "1"
     },
-    # Nivel 2: Búsqueda Binaria /// Fede
+    # Nivel 2: Búsqueda Binaria
     {"nivel": 2,
         "texto": f"Si tienes la siguiente lista: {lista_binario} \nDebes buscar el número 82 en ella, pensando en la eficiencia de busqueda  y la cantitad de valores de la lista . ¿Qué algoritmo utilizarías ?",
         "opciones": ["Búsqueda lineal", "Búsqueda binaria"], 
@@ -35,13 +35,13 @@ PREGUNTAS = [
         "opciones": ["Insertion Sort", "Quick Sort", "Selection Sort", "Bubble Sort"],
         "respuesta_correcta": "3"
     },
-    # Nivel 5: Insertion Sort (Ordenamiento por inserción) /// Fede
+    # Nivel 5: Insertion Sort (Ordenamiento por inserción) 
     {"nivel": 5,
     "texto": "¿Qué algoritmo de ordenamiento construye la lista ordenada elemento por elemento, insertando cada nuevo elemento en la posición correcta?",
     "opciones": ["Bubble Sort", "Selection Sort", "Insertion Sort", "Quick Sort"],
     "respuesta_correcta": "3"
     },
-    # Nivel 6: Quick Sort (Ordenamiento rápido)  /// Fede
+    # Nivel 6: Quick Sort (Ordenamiento rápido)
     {
     "nivel": 6,
     "texto": "¿Cuál de los siguientes algoritmos utiliza el concepto de divide y vencerás para ordenar una lista utilizando un pivote?",
